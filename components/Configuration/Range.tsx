@@ -84,7 +84,7 @@ const Range = ({ isAcc }: Props) => {
     useDeviceStore.getState().reset()
     console.log("yeaaaaaaaaaaaaaaaaaaaaaaah")
     axios
-      .post("http://localhost:4000/api/threshold")
+      .post("http://103.154.184.52:4000/api/threshold")
       .then((response) => {
         // Handle the response
         console.log(response.data)
@@ -116,7 +116,7 @@ const Range = ({ isAcc }: Props) => {
     console.log("i >>>> 2")
     setAxis("X-Axis")
     axios
-      .post("http://localhost:4000/api/threshold")
+      .post("http://103.154.184.52:4000/api/threshold")
       .then((response) => {
         // Handle the response
         console.log(response.data)
@@ -166,7 +166,7 @@ const Range = ({ isAcc }: Props) => {
     async ({ signal }) => {
       return await axiosConfig({
         method: "put",
-        url: "http://localhost:4000/api/threshold/",
+        url: "http://103.154.184.52:4000/api/threshold/",
         data: { ...thresholds, [getLabel()]: { ...value } },
         signal,
       }).then((res) => res.data)
@@ -600,7 +600,7 @@ const Range = ({ isAcc }: Props) => {
               }
 
               axios
-                .post("http://localhost:4000/api/threshold/save", article)
+                .post("http://103.154.184.52:4000/api/threshold/save", article)
                 .then((response) => {
                   console.log("POST request successful:", response.data)
                   console.log("POST request successful:", response.data)
