@@ -446,7 +446,7 @@ const FftChart: React.FC<{ data: any[] }> = (props) => {
 
                       axios
                         .post(
-                          "http://localhost:4000/api/threshold/filterfft",
+                          "http://103.154.184.52:4000/api/threshold/filterfft",
                           article
                         )
                         .then((response) => {
