@@ -256,7 +256,7 @@ const TimeWaveformChart: React.FC<{ data: any[] }> = (props) => {
   //         // Code to run every second
   //         const article = { title: h1.asset_id }
   //         axios
-  //           .post("http://localhost:4000/api/threshold/update", article)
+  //           .post("http://103.154.184.52:4000/api/threshold/update", article)
   //           .then((response) => {
   //             console.log("HERE I M PRINTING RESPONSE")
   //             const copy = [...h1["x_rms_acl"]]
@@ -513,7 +513,7 @@ const TimeWaveformChart: React.FC<{ data: any[] }> = (props) => {
     async ({ signal }) => {
       return await axiosConfig({
         method: "put",
-        url: "http://localhost:4000/api/analytics/timeWaveForm",
+        url: "http://103.154.184.52:4000/api/analytics/timeWaveForm",
         data: {
           start_time: startTime,
           end_time: endTime,
@@ -702,7 +702,7 @@ const TimeWaveformChart: React.FC<{ data: any[] }> = (props) => {
 
                       axios
                         .post(
-                          "http://localhost:4000/api/threshold/filter",
+                          "http://103.154.184.52:4000/api/threshold/filter",
                           article
                         )
                         .then((response) => {
