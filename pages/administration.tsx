@@ -129,7 +129,7 @@ const Administration = () => {
     ["users"],
     async () => {
       return axiosConfig
-        .get(`http://localhost:4000/api/users/all`)
+        .get(`http://103.154.184.52:4000/api/users/all`)
         .then((res) => res.data)
     },
     {
