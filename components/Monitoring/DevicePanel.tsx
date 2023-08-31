@@ -138,7 +138,7 @@ const DevicePanel = ({ createCard = (part: any[]) => {} }: dataFormProps) => {
 
     const article = { title: selectedDevice?.asset_id }
     axios
-      .post("http://localhost:4000/api/threshold/rms", article)
+      .post("http://103.154.184.52:4000/api/threshold/rms", article)
       .then((response) => {
         setPart(response.data)
         setLoading(false)
@@ -166,7 +166,7 @@ const DevicePanel = ({ createCard = (part: any[]) => {} }: dataFormProps) => {
   //       // Code to run every second
   //       const article = { title: selectedDevice?.asset_id }
   //       axios
-  //         .post("http://localhost:4000/api/threshold/rms", article)
+  //         .post("http://103.154.184.52:4000/api/threshold/rms", article)
   //         .then((response) => {
   //           console.log("i want to chevk thjis response")
   //           console.log("i want to chevk this response")
@@ -239,7 +239,7 @@ const DevicePanel = ({ createCard = (part: any[]) => {} }: dataFormProps) => {
       }
       const article = { title: selectedDevice?.asset_id }
       axios
-        .post("http://localhost:4000/api/threshold/rms", article)
+        .post("http://103.154.184.52:4000/api/threshold/rms", article)
         .then((response) => {
           changesHandler(response.data)
           console.log("changes done")
