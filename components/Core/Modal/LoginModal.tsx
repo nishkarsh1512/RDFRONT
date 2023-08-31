@@ -35,7 +35,7 @@ const LoginModal = (props: Props) => {
     ["login"],
     async () =>
       axiosConfig
-        .post(`http://localhost:4000/api/users/login`, formData)
+        .post(`http://103.154.184.52:4000/api/users/login`, formData)
         .then((res) => res.data),
     {
       refetchOnWindowFocus: false,
